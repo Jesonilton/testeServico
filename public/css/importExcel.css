@@ -1,0 +1,10 @@
+
+/*Estilo css para a view ImportExcel.blade.php*/
+
+.campos-form{
+	margin-top: 30px;
+}
+
+.link-ver-importados{
+	text-decoration: none !important;
+}

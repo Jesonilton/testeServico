@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('import-excel-data');
+});
+
+Route::get('/historico-municipios', function () {
+    return view('historico-municipios');
 });

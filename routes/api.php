@@ -13,6 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::post('/importar-dados','ExcelController@import');
+Route::get('/listar-todos','HistoricoMunicipiosController@listarTodos');
+Route::get('/nome-municipios','HistoricoMunicipiosController@buscarNomeMunicipios');
+Route::get('/filtrar-municipio','HistoricoMunicipiosController@filtrarPorMunicipio');
+Route::get('/filtrar-municipio-data','HistoricoMunicipiosController@filtrarPorMunicipioData');
+
+
+
+
+
+

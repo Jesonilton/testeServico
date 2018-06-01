@@ -1,0 +1,16 @@
+.div-select-municipios{
+	padding: 15px 25%;
+	text-align: center;
+	float: left;
+	z-index: 1000;
+}
+
+.div-tbl-geral-municipios{
+	font-size: 13px;
+	float: left;
+}
+
+#paginator{
+	float: right;
+}
+
