@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('import-excel-data');
 });
 
-Route::get('/historico-municipios', function () {
+Route::get('/convenios-municipios', function () {
     return view('historico-municipios');
 });

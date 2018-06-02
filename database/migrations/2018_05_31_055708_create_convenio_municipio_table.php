@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHistoricoMunicipioTable extends Migration
+class CreateConvenioMunicipioTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateHistoricoMunicipioTable extends Migration
      */
     public function up()
     {
-        Schema::create('historico_municipios', function (Blueprint $table) {
+        Schema::create('convenios_municipios', function (Blueprint $table) {
             $table->increments('id');
             $table->string('c_ano');
             $table->text('c_resenha');
             $table->text('c_partes');
-            $table->bigInteger('c_valor_real')->nullable();
+            $table->decimal('c_valor_real', 10, 2)->nullable();
             $table->text('c_objeto')->nullable();
             $table->string('c_cod_municipio');
             $table->string('c_nome_municipio');
@@ -33,6 +33,6 @@ class CreateHistoricoMunicipioTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('historico_municipios');
+        Schema::dropIfExists('convenios_municipios');
     }
 }

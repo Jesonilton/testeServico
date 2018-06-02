@@ -14,7 +14,7 @@
 	<div id="messages">
 
 	</div>
-	<form id="form-import" class="form-horizontal text-center" method="post" action="{{url('api/importar-dados')}}" enctype="multipart/form-data">
+	<form id="form-import" class="form-horizontal text-center" method="post" action="{{url('api/importar-convenios')}}" enctype="multipart/form-data">
 		@csrf
 		<legend class="row">Importar Dados de arquivos Excel</legend>
 		<div class="campos-form">
@@ -34,8 +34,11 @@
 	</form>
 
 	<div class="col-md-12">
-		<a href="{{url('/historico-municipios')}}" class="link-ver-importados"><i class="fa fa-share"></i> Ver dados já importados</a>
+		<a href="{{url('/convenios-municipios')}}" class="link-ver-importados"><i class="fa fa-share"></i> Ver dados já importados</a>
 	</div>
+	<br>
+	<br>
+	<h3 class="alert alert-info">Pode demorar 5 segundos dependendo de sua internet</h3>
 @stop
 
 @section('js')

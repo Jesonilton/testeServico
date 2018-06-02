@@ -13,11 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/importar-dados','ExcelController@import');
-Route::get('/listar-todos','HistoricoMunicipiosController@listarTodos');
-Route::get('/nome-municipios','HistoricoMunicipiosController@buscarNomeMunicipios');
-Route::get('/filtrar-municipio','HistoricoMunicipiosController@filtrarPorMunicipio');
-Route::get('/filtrar-municipio-data','HistoricoMunicipiosController@filtrarPorMunicipioData');
+Route::post('/importar-convenios','ExcelController@import');
+
+Route::get('/nome-municipios','ConveniosMunicipioController@buscarNomeMunicipios');
+Route::get('/filtrar/{cod_municipio?}/{ano?}','ConveniosMunicipioController@filtrar');
 
 
 

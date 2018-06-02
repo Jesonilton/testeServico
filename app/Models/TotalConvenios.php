@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class TotaisTable extends Model
+class TotalConvenios extends Model
 {
-	protected $table = 'totais';
+	protected $table = 'totais_convenios';
     protected $fillable = ["municipio","ano","quantidade","total"];
 }
