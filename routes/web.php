@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/convenios-municipios', function () {
-    return view('historico-municipios');
+    return view('convenios-municipios');
 });

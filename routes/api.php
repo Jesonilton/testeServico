@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 Route::post('/importar-convenios','ExcelController@import');
 
 Route::get('/nome-municipios','ConveniosMunicipioController@buscarNomeMunicipios');
+//rota responsável pelos filtros
 Route::get('/filtrar/{cod_municipio?}/{ano?}','ConveniosMunicipioController@filtrar');
 
 
